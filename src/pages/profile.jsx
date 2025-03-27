@@ -11,7 +11,7 @@ const ProfilePage = () => {
   useEffect(() => {
     let token = localStorage.getItem("token");
     axios
-      .get(`https://nt-devconnector.onrender.com/api/profile/${id}`, {
+      .get(`https://nt-devconnector.onrender.com/api/profile/user/${id}`, {
         headers: { "x-auth-token": token,
          },
       })
